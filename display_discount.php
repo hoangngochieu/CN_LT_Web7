@@ -12,7 +12,7 @@
  $sauchietkhau_f = "$".number_format($sauchietkhau,2);
 
 ?>
-1ád
+commit 1
 <!DOCTYPE html>
 <html>
 <head>
