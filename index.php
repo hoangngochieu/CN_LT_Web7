@@ -8,7 +8,7 @@ if ($task_list === NULL) {
 //    add some hard-coded starting values to make testing easier
 //    $task_list[] = 'Write chapter';
 //    $task_list[] = 'Edit chapter';
-//    $task_list[] = 'Proofread chapter';
+//    $task_list[] = 'Proofread chapter';       
 }
 
 //get action variable from POST
@@ -36,9 +36,17 @@ switch( $action ) {
             $task_list = array_values($task_list);
         }
         break;
-/*
+
     case 'Modify Task':
+        $task_index = filter_input(INPUT_POST, 'taskid',FILTER_VALIDATE_INT);
+        if ($task_index === null || $task_index === false){
+            $errors[] = 'The task cannot be empty.';
+        }
+        else{
+            
+        }
     
+ /*   
     case 'Save Changes':
     
     case 'Cancel Changes':
