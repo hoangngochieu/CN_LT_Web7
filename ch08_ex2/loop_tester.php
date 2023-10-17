@@ -42,14 +42,9 @@
 
         <label>Number to Roll:</label>
         <select name="number_to_roll">
-            <!-- TODO: Use a for loop to display these options ! -->
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select><br>
+            <?php for ($i = 0; $i < 7; $i++):?>
+                <option value="<?php echo $i;?>"><?php echo $i?></option>
+            <?php endfor; ?> 
 
         <label>&nbsp;</label>
         <input type="submit" value="Process Rolls"><br>

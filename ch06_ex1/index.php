@@ -36,9 +36,9 @@ switch( $action ) {
             $task_list = array_values($task_list);
         }
         break;
-/*
+
     case 'Modify Task':
-    
+  /*  
     case 'Save Changes':
     
     case 'Cancel Changes':

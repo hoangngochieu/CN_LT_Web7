@@ -1,3 +1,7 @@
+<?php
+if (!isset($customer_type)) { $customer_type = ''; }
+if (!isset($invoice_subtotal)) { $invoice_subtotal = ''; } 
+?>
 <!DOCTYPE html>
 <html>
 <head>
